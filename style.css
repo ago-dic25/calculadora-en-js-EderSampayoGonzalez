@@ -1,0 +1,62 @@
+body{
+    background-color: rgb(252, 244, 252);
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    gap: 20px;
+    width: 70vw;
+    height: 15vw;
+}
+
+.grid *{
+    background-color:#4682A9;
+    color: #FFFBDE;
+    grid-row: span 3;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+    font-weight: bold;
+    border: 4px outset #91C8E4;
+    text-align: center;
+}
+
+.resultado{
+    grid-column: span 12;
+    grid-row: span 4;
+    position: relative;
+}
+
+.input{
+    grid-column: span 5;
+}
+
+::placeholder{
+    color:#FFFBDE;
+    font-weight: normal;
+}
+
+.operador{
+    grid-column: span 1;
+    border-radius: 50%;
+}
+
+.limpiar{
+    grid-column: span 2;
+    grid-row: span 6;
+    border-radius: 50%;
+}
+
+.logs{
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#historial{
+    display: flex;
+    flex-direction: column-reverse;
+    list-style:decimal-leading-zero;
+    list-style-position: inside;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Calculadora en HTML</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+
+    <body>
+        <div class="grid">
+            <div class="resultado" id="resultado"> resultado: </div>
+            <input type="number" class="input" id="input1" placeholder="Ingrese el operador">  </input>
+            <button class="operador" id="suma"> + </button>
+            <button class="operador" id="resta"> - </button>
+            <button class="limpiar" id="limpiar"> limpiar </button>
+            <input type="number" class="input" id="input2" placeholder="Ingrese el operando">  </input>
+            <button class="operador" id="multiplicar"> * </button>
+            <button class="operador" id="dividir"> / </button>
+        </div>
+
+        <h3>Historial: </h1>
+        <div class="logs">
+            <ul id="historial"> </ul>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>
